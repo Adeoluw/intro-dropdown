@@ -206,21 +206,64 @@ main{
 
     .mobile-nav{
         display: flex;
-        width: 100%;
-        justify-content: space-between;
-        flex-direction:column;
-        margin-left: calc(70%);
-        border: 1px solid black;
+        width: min(100%, 912px);
+        /* opacity: 0; */
+        height: 700px;
+        z-index: 999;
     }
 
     #dropdowns{
-        display: block;
         color:  hsl(0, 0%, 41%);
         margin-top:-6px;
     }
 
     #sign-in{
-        display: block;
         margin-left: 0px;
     }
+
+    main{
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        margin-top: -660px;
+        flex-direction: column-reverse;
+    }
+
+    #image-area img{
+        height:70%;
+        width: 100%;
+    }
+
+    #image-area {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    #text-area{
+        padding-top: 30px;
+        text-align: center;
+    }
+    
+    #text-area h1{
+        width:auto;
+        padding-top: 40px;
+        font-size: 88px;
+    }
+    
+    #text-area p{
+        color: hsl(0, 0%, 41%);
+        padding: 0px 20px;
+        font-size: 18px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        margin-top: -5px;
+    }
+
+    .dropdown-con > .link:focus + .dropdown{
+        display: block;
+    } 
+
 }
