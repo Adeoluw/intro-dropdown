@@ -208,24 +208,32 @@ main{
         display: flex;
         width: min(100%, 912px);
         /* opacity: 0; */
-        height: 700px;
         z-index: 999;
+        flex-wrap: wrap;
+    }
+
+    .mobile-nav button{
+        margin-bottom: 20px;
     }
 
     #dropdowns{
         color:  hsl(0, 0%, 41%);
         margin-top:-6px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     #sign-in{
         margin-left: 0px;
+            display: flex;
+            justify-content: center;
+            width: auto;
     }
 
     main{
         padding-left: 0px;
         padding-right: 0px;
         display: flex;
-        margin-top: -660px;
         flex-direction: column-reverse;
     }
 
@@ -256,14 +264,29 @@ main{
         font-size: 18px;
     }
 
+
+
     footer{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         margin-top: -5px;
     }
 
+    #foot-icons{
+        width: min(100%, 912px);
+        line-height:40px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .dropdown-con > .link:focus + .dropdown{
         display: block;
-    } 
+    }
+
+    #foot-icons img{
+        margin-bottom: 20px;
+    }
 
 }
