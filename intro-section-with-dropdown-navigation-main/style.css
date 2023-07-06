@@ -200,36 +200,55 @@ main{
     margin-top: 22px;
 }
 
+.menu{
+    display: none;
+}
 
+.close-menu{
+    display: none;
+}
 
-@media only screen and (max-width: 912px){
+.dropdown li img{
+    margin-right: 7px;
+}
+
+@media only screen and (max-width: 769px){
 
     .mobile-nav{
-        display: flex;
-        width: min(100%, 912px);
-        /* opacity: 0; */
+        display: none ;
+        width: 50%;
+        opacity: 1;
         z-index: 999;
-        flex-wrap: wrap;
+        right: 0;
+        top: 0;
+        height: 100%;
+        position: absolute;
+        padding-top: 60px;
+        background-color: white;
     }
 
     .mobile-nav button{
         margin-bottom: 20px;
     }
 
-    #dropdowns{
-        color:  hsl(0, 0%, 41%);
-        margin-top:-6px;
-        display: flex;
-        flex-wrap: wrap;
+
+    #dropdowns {
+        color: hsl(0, 0%, 41%);
+        right: 0;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
     }
 
-    #sign-in{
-        margin-left: 0px;
-            display: flex;
-            justify-content: center;
-            width: auto;
-    }
 
+
+    #sign-in {
+    margin-left: 0px;
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+    width: auto;
+}
     main{
         padding-left: 0px;
         padding-right: 0px;
@@ -265,6 +284,20 @@ main{
     }
 
 
+    .dropdown {
+        position: absolute;
+        display: none;
+        cursor: default;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+        right: 10px;
+        padding: 10px 5px;
+        z-index: 0;
+        width: 120px;
+        z-index: 999;
+        text-align: center;
+    }
 
     footer{
         display: flex;
@@ -289,4 +322,25 @@ main{
         margin-bottom: 20px;
     }
 
+    .menu{
+        position: relative;
+        display: block;
+        top: 15px;
+        height: 50px;
+        margin-left: auto;
+    }
+
+    .menu img{
+        cursor: pointer;
+    }
+
+    .close-menu{
+        width: 40px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+        cursor: pointer;
+        margin-left: auto;
+        /* float: right; */
+    }
 }
