@@ -216,7 +216,7 @@ main{
 
     .mobile-nav{
         display: none ;
-        width: 50%;
+        width: auto;
         opacity: 1;
         z-index: 999;
         right: 0;
