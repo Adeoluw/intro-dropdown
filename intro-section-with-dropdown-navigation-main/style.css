@@ -238,6 +238,8 @@ main{
         display: grid;
         grid-template-columns: auto;
         justify-content: center;
+        padding-right: 50px;
+        margin-right: auto;
     }
 
 
